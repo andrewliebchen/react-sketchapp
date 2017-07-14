@@ -29,16 +29,16 @@ const renderToSketch = (
     `);
   }
 
-  if (container.containsLayers()) {
-    const loop = container.children().objectEnumerator();
-    let currLayer = loop.nextObject();
-    while (currLayer) {
-      if (currLayer !== container) {
-        currLayer.removeFromParent();
-      }
-      currLayer = loop.nextObject();
-    }
-  }
+//   if (container.containsLayers()) {
+//     const loop = container.children().objectEnumerator();
+//     let currLayer = loop.nextObject();
+//     while (currLayer) {
+//       if (currLayer !== container) {
+//         currLayer.removeFromParent();
+//       }
+//       currLayer = loop.nextObject();
+//     }
+//   }
 
   container.addLayers([layer]);
   return container;
